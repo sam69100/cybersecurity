@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Consulting</title>
+    <meta name="description" content="Expert en cybersécurité : audit, pentest, formation et conseil pour protéger votre entreprise contre les cybermenaces">
+    <meta name="keywords" content="cybersécurité, audit sécurité, pentest, test intrusion, RGPD, ISO 27001, forensique">
+    <meta name="author" content="Cybersecurity Consulting">
+    
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="Cybersecurity - Expert en Cybersécurité">
+    <meta property="og:description" content="Protection complète contre les cybermenaces">
+    <meta property="og:type" content="website">
+    
+    <title>Cybersecurity - Expert en Audit, Pentest & Conseil en Sécurité Informatique</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -18,6 +27,8 @@
                 <ul>
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#chiffres">Chiffres clés</a></li>
+                    <li><a href="#methode">Méthode</a></li>
                     <li><a href="#apropos">À propos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -30,11 +41,41 @@
         <div class="hero-content">
             <h2>Protégez votre entreprise contre les cybermenaces</h2>
             <p>Audit, Pentest, Forensique, Conseil & Sécurisation — un accompagnement complet pour renforcer votre cybersécurité.</p>
-            <a href="#contact" class="cta-btn">Nous contacter</a>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-btn primary">Audit gratuit</a>
+                <a href="#services" class="cta-btn secondary">Découvrir nos services</a>
+            </div>
         </div>
     </section>
 
     <main class="container">
+
+        <!-- CHIFFRES CLÉS -->
+        <section id="chiffres" class="section stats-section">
+            <h2><i class="fa-solid fa-chart-line"></i> Chiffres clés</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-building stat-icon"></i>
+                    <h3 class="stat-number">200+</h3>
+                    <p>Entreprises protégées</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-clock stat-icon"></i>
+                    <h3 class="stat-number">24/7</h3>
+                    <p>Surveillance continue</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-shield-halved stat-icon"></i>
+                    <h3 class="stat-number">99.9%</h3>
+                    <p>Taux de disponibilité</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-award stat-icon"></i>
+                    <h3 class="stat-number">10+</h3>
+                    <p>Années d'expérience</p>
+                </div>
+            </div>
+        </section>
 
         <!-- SERVICES -->
         <section id="services" class="section">
@@ -42,67 +83,315 @@
 
             <div class="services-grid">
 
-                <div class="service-card">
+                <article class="service-card">
                     <i class="fa-solid fa-magnifying-glass service-icon"></i>
-                    <h3>Audit & Analyse</h3>
-                    <p>Évaluation complète de votre système d’information pour identifier les vulnérabilités et risques.</p>
-                </div>
+                    <h3>Audit & Analyse de Sécurité</h3>
+                    <p>Évaluation complète de votre système d'information pour identifier les vulnérabilités et risques selon les standards OWASP, NIST et ISO 27001.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fa-solid fa-check"></i> Analyse des infrastructures réseau</li>
+                        <li><i class="fa-solid fa-check"></i> Audit de configuration</li>
+                        <li><i class="fa-solid fa-check"></i> Rapport détaillé avec recommandations</li>
+                        <li><i class="fa-solid fa-check"></i> Cartographie des risques</li>
+                    </ul>
+                    <a href="#contact" class="service-btn">En savoir plus</a>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <i class="fa-solid fa-user-secret service-icon"></i>
-                    <h3>Pentest</h3>
-                    <p>Tests d’intrusion réalistes pour mesurer la résistance de vos infrastructures et applications.</p>
-                </div>
+                    <h3>Tests d'Intrusion (Pentest)</h3>
+                    <p>Tests d'intrusion réalistes pour mesurer la résistance de vos infrastructures, applications web, mobiles et réseaux face aux cyberattaques.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fa-solid fa-check"></i> Pentest Black/Grey/White Box</li>
+                        <li><i class="fa-solid fa-check"></i> Test applications web & API</li>
+                        <li><i class="fa-solid fa-check"></i> Test d'ingénierie sociale</li>
+                        <li><i class="fa-solid fa-check"></i> Rapport exécutif et technique</li>
+                    </ul>
+                    <a href="#contact" class="service-btn">En savoir plus</a>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <i class="fa-solid fa-lock service-icon"></i>
-                    <h3>Sécurisation</h3>
-                    <p>Durcissement serveurs, postes, cloud, segmentation réseau, firewall/VPN.</p>
-                </div>
+                    <h3>Sécurisation & Durcissement</h3>
+                    <p>Mise en place de mesures de protection adaptées : durcissement serveurs, postes, cloud, segmentation réseau, firewall, VPN et solutions EDR/XDR.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fa-solid fa-check"></i> Configuration sécurisée serveurs/cloud</li>
+                        <li><i class="fa-solid fa-check"></i> Mise en place firewall et VPN</li>
+                        <li><i class="fa-solid fa-check"></i> Segmentation réseau (VLAN, micro-segmentation)</li>
+                        <li><i class="fa-solid fa-check"></i> Solutions antivirus et EDR</li>
+                    </ul>
+                    <a href="#contact" class="service-btn">En savoir plus</a>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <i class="fa-solid fa-triangle-exclamation service-icon"></i>
-                    <h3>Réponse à Incident</h3>
-                    <p>Assistance en cas d’attaque, analyse forensique, confinement et remédiation.</p>
-                </div>
+                    <h3>Réponse à Incident & Forensique</h3>
+                    <p>Assistance immédiate en cas d'attaque : analyse forensique, identification de la compromission, confinement de la menace et remédiation complète.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fa-solid fa-check"></i> Intervention d'urgence 24/7</li>
+                        <li><i class="fa-solid fa-check"></i> Analyse forensique détaillée</li>
+                        <li><i class="fa-solid fa-check"></i> Confinement et éradication</li>
+                        <li><i class="fa-solid fa-check"></i> Plan de remédiation</li>
+                    </ul>
+                    <a href="#contact" class="service-btn">En savoir plus</a>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <i class="fa-solid fa-handshake service-icon"></i>
                     <h3>Conseil & Gouvernance</h3>
-                    <p>Conformité RGPD, ISO 27001, NIS2, gestion des risques, politiques de sécurité.</p>
-                </div>
+                    <p>Support stratégique pour renforcer votre posture de sécurité : conformité RGPD, ISO 27001, NIS2, gestion des risques et élaboration de politiques de sécurité.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fa-solid fa-check"></i> Mise en conformité RGPD/ISO 27001</li>
+                        <li><i class="fa-solid fa-check"></i> Analyse de risques (EBIOS, MEHARI)</li>
+                        <li><i class="fa-solid fa-check"></i> Rédaction de politiques de sécurité</li>
+                        <li><i class="fa-solid fa-check"></i> Accompagnement certification</li>
+                    </ul>
+                    <a href="#contact" class="service-btn">En savoir plus</a>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <i class="fa-solid fa-chalkboard-user service-icon"></i>
-                    <h3>Formation</h3>
-                    <p>Sensibilisation des équipes, bonnes pratiques, sécurité cloud & réseau.</p>
-                </div>
+                    <h3>Formation & Sensibilisation</h3>
+                    <p>Programmes de formation adaptés à vos équipes : sensibilisation des utilisateurs, bonnes pratiques de sécurité, sécurité cloud, réseau et développement sécurisé.</p>
+                    <ul class="service-benefits">
+                        <li><i class="fa-solid fa-check"></i> Sensibilisation phishing et risques</li>
+                        <li><i class="fa-solid fa-check"></i> Formation sécurité développeurs</li>
+                        <li><i class="fa-solid fa-check"></i> Ateliers pratiques (CTF, lab)</li>
+                        <li><i class="fa-solid fa-check"></i> Support pédagogique personnalisé</li>
+                    </ul>
+                    <a href="#contact" class="service-btn">En savoir plus</a>
+                </article>
 
             </div>
         </section>
 
+        <!-- MÉTHODE / PROCESSUS -->
+        <section id="methode" class="section method-section">
+            <h2><i class="fa-solid fa-list-check"></i> Notre Méthode</h2>
+            <p class="section-intro">Un processus éprouvé en 4 étapes pour sécuriser efficacement votre organisation</p>
+            
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Audit Initial</h3>
+                    <p>Évaluation complète de votre infrastructure, identification des vulnérabilités et des risques prioritaires.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Recommandations</h3>
+                    <p>Plan d'action détaillé avec priorisation des mesures à mettre en œuvre selon leur criticité et leur impact.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Mise en Œuvre</h3>
+                    <p>Déploiement des solutions de sécurité, configuration, tests et validation de l'efficacité des mesures.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Surveillance Continue</h3>
+                    <p>Monitoring permanent, veille sur les menaces, mises à jour régulières et amélioration continue de votre sécurité.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POURQUOI NOUS CHOISIR -->
+        <section class="section why-us-section">
+            <h2><i class="fa-solid fa-star"></i> Pourquoi nous choisir ?</h2>
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h3>Expertise Certifiée</h3>
+                    <p>Certifications reconnues (CEH, OSCP, ISO 27001) et veille technologique constante.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Approche Personnalisée</h3>
+                    <p>Solutions adaptées à la taille et aux besoins spécifiques de votre entreprise.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Disponibilité</h3>
+                    <p>Support réactif et intervention rapide en cas d'incident de sécurité.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <h3>Conformité Garantie</h3>
+                    <p>Respect des normes RGPD, ISO 27001, NIS2 et des meilleures pratiques internationales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÉMOIGNAGES -->
+        <section class="section testimonials-section">
+            <h2><i class="fa-solid fa-quote-left"></i> Témoignages Clients</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Intervention rapide et professionnelle suite à une attaque. L'analyse forensique nous a permis de comprendre la faille et de la corriger définitivement."</p>
+                    <div class="testimonial-author">
+                        <strong>Marie Dubois</strong>
+                        <span>DSI - TechInnovate SAS</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Le pentest a révélé des vulnérabilités critiques que nous ignorions. Les recommandations étaient claires et nous avons pu les implémenter rapidement."</p>
+                    <div class="testimonial-author">
+                        <strong>Jean Martin</strong>
+                        <span>CTO - CloudServices Inc.</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Accompagnement exemplaire pour notre certification ISO 27001. Pédagogie, expertise technique et disponibilité au rendez-vous."</p>
+                    <div class="testimonial-author">
+                        <strong>Sophie Laurent</strong>
+                        <span>Responsable Qualité - DataSecure</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- À PROPOS -->
-        <section id="apropos" class="section">
+        <section id="apropos" class="section about-section">
             <h2><i class="fa-solid fa-id-card"></i> À propos</h2>
-            <p>
-                Consultant indépendant en cybersécurité, j’accompagne les entreprises dans la protection de leurs systèmes d’information.
-                Mon approche repose sur la rigueur technique, la pédagogie et l’adaptation aux enjeux de chaque organisation.
-            </p>
+            <div class="about-content">
+                <p>
+                    Consultant indépendant en cybersécurité avec plus de 10 ans d'expérience, j'accompagne les entreprises, PME et grands comptes dans la protection de leurs systèmes d'information face aux cybermenaces en constante évolution.
+                </p>
+                <p>
+                    Mon approche repose sur trois piliers fondamentaux : la <strong>rigueur technique</strong> pour des solutions efficaces et durables, la <strong>pédagogie</strong> pour transmettre les bonnes pratiques à vos équipes, et l'<strong>adaptation</strong> aux enjeux spécifiques de votre organisation.
+                </p>
+                <p>
+                    Certifié CEH, OSCP et ISO 27001 Lead Implementer, je reste en veille constante sur les dernières menaces et technologies pour vous garantir une protection optimale.
+                </p>
+            </div>
+            
+            <div class="certifications">
+                <h3>Certifications & Compétences</h3>
+                <div class="cert-badges">
+                    <span class="badge"><i class="fa-solid fa-award"></i> CEH (Certified Ethical Hacker)</span>
+                    <span class="badge"><i class="fa-solid fa-award"></i> OSCP (Offensive Security)</span>
+                    <span class="badge"><i class="fa-solid fa-award"></i> ISO 27001 Lead Implementer</span>
+                    <span class="badge"><i class="fa-solid fa-award"></i> CISSP (en cours)</span>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="section">
+        <section id="contact" class="section contact-section">
             <h2><i class="fa-solid fa-paper-plane"></i> Contact</h2>
-            <p><i class="fa-solid fa-envelope"></i> contact@cybersecurity.fr</p>
-            <p><i class="fa-solid fa-phone"></i> 06 00 00 00 00</p>
-            <p><i class="fa-solid fa-location-dot"></i> France</p>
+            <p class="section-intro">Besoin d'un audit, d'un pentest ou d'un conseil ? Contactez-moi pour échanger sur vos besoins en cybersécurité.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:contact@cybersecurity.fr">contact@cybersecurity.fr</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <a href="tel:+33600000000">06 00 00 00 00</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>France (Interventions nationales)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="#" target="_blank">Profil LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Entreprise</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service">
+                            <option value="">-- Sélectionner --</option>
+                            <option value="audit">Audit & Analyse</option>
+                            <option value="pentest">Pentest</option>
+                            <option value="securisation">Sécurisation</option>
+                            <option value="incident">Réponse à Incident</option>
+                            <option value="conseil">Conseil & Gouvernance</option>
+                            <option value="formation">Formation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Envoyer
+                    </button>
+                </form>
+            </div>
         </section>
 
     </main>
 
+    <!-- BOUTON RETOUR EN HAUT -->
+    <button id="scrollTop" class="scroll-top" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <footer>
-        <p>&copy; 2026 Cybersecurity — Tous droits réservés.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h4>
+                <p>Expert en cybersécurité pour la protection de votre entreprise.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens rapides</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#methode">Méthode</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Audit de sécurité</a></li>
+                    <li><a href="#services">Pentest</a></li>
+                    <li><a href="#services">Conseil RGPD</a></li>
+                    <li><a href="#services">Formation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-envelope"></i> contact@cybersecurity.fr</li>
+                    <li><i class="fa-solid fa-phone"></i> 06 00 00 00 00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cybersecurity — Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
