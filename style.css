@@ -269,10 +269,12 @@ nav a:hover::after {
 }
 
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 2rem;
     margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
 .stat-card {
@@ -282,6 +284,8 @@ nav a:hover::after {
     text-align: center;
     border: 1px solid rgba(59, 130, 246, 0.2);
     transition: var(--transition);
+    flex: 1;
+    min-width: 200px;
 }
 
 .stat-card:hover {
@@ -869,7 +873,10 @@ footer {
         font-size: 2rem;
     }
     
-    .stats-grid,
+    .stats-grid {
+        flex-direction: column;
+    }
+    
     .why-us-grid,
     .testimonials-grid {
         grid-template-columns: 1fr;
