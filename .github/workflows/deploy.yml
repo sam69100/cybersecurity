@@ -1,0 +1,53 @@
+name: Déploiement du site web
+
+# Déclencheur : à chaque push sur main
+on:
+  push:
+    branches: [ "main" ]
+
+# Permissions nécessaires pour GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Déploiement sur GitHub Pages
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Construire le site
+        run: npm run build
+
+      - name: Préparer les fichiers pour GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist   # Dossier généré par ton build (adapter si besoin)
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
