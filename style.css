@@ -10,27 +10,12 @@ body {
     line-height: 1.7;
 }
 
-<<<<<<< HEAD
-/* Le site prend TOUTE la largeur */
+/* Largeur fluide mais contrôlée */
 main {
-    width: 100%;
-    padding: 40px 8%;
-=======
-/* Cadre autour de la page */
-html {
-    background: linear-gradient(45deg, #000, #0055ff);
-    padding: 5px; /* réduit pour moins de noir */
-}
-
-/* Container central */
-.container {
-    max-width: 1400px; /* plus large */
+    width: 90%;
+    max-width: 1400px;
     margin: auto;
-    padding: 30px;
-    background-color: #161b22;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    padding: 40px 0;
 }
 
 /* ----------------------------- */
@@ -39,32 +24,16 @@ html {
 
 header {
     text-align: center;
-<<<<<<< HEAD
     padding: 25px 0;
     background-color: #0d1117;
     border-bottom: 2px solid #1f6feb;
 }
 
 header h1 {
-    font-size: 3rem;
-=======
-    padding: 10px 0 5px 0;
-}
-
-header h1 {
-    font-size: 3rem; /* plus grand */
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    font-size: 2.8rem;
     color: #58a6ff;
     margin: 0;
-    letter-spacing: 2px;
-}
-
-header i {
-<<<<<<< HEAD
-    margin-right: 10px;
-=======
-    margin-right: 8px;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    letter-spacing: 1px;
 }
 
 /* ----------------------------- */
@@ -73,50 +42,25 @@ header i {
 
 nav {
     background-color: #0d1117;
-<<<<<<< HEAD
     padding: 15px 0;
-=======
-    border-bottom: 2px solid #1f6feb;
-    padding: 10px 0;
-    margin-bottom: 10px;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    border-bottom: 1px solid #1f6feb33;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    gap: 40px;
-=======
-    gap: 30px;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    gap: 35px;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: #c9d1d9;
     font-weight: 500;
-<<<<<<< HEAD
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    font-size: 1.1rem;
     transition: 0.3s;
-=======
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: 0.3s;
-    font-size: 1.1rem; /* plus grand */
-}
-
-nav a i {
-    color: #58a6ff;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
 }
 
 nav a:hover {
@@ -128,61 +72,32 @@ nav a:hover {
 /* ----------------------------- */
 
 section {
-<<<<<<< HEAD
-    margin-bottom: 70px;
-=======
-    margin-bottom: 50px;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: #161b22;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 section h2 {
     color: #58a6ff;
-<<<<<<< HEAD
-    font-size: 2.4rem;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 20px;
     border-left: 4px solid #1f6feb;
     padding-left: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 section h3 {
     color: #79c0ff;
-    font-size: 1.5rem;
-    margin-top: 30px;
-    margin-bottom: 8px;
-=======
-    font-size: 2.2rem; /* plus grand */
-    margin-bottom: 10px;
-    border-left: 4px solid #1f6feb;
-    padding-left: 10px;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-<<<<<<< HEAD
-p {
-    font-size: 1.25rem;
-    color: #c9d1d9;
-=======
-section h3 {
-    color: #79c0ff;
-    font-size: 1.4rem; /* plus grand */
+    font-size: 1.3rem;
     margin-top: 25px;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    margin-bottom: 8px;
 }
 
 /* Paragraphes */
 p {
+    font-size: 1.15rem;
     color: #c9d1d9;
-    font-size: 1.15rem; /* plus grand */
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
 }
 
 /* ----------------------------- */
@@ -191,18 +106,11 @@ p {
 
 footer {
     text-align: center;
-<<<<<<< HEAD
     padding: 20px;
     color: #8b949e;
     font-size: 1rem;
-    border-top: 2px solid #1f6feb;
+    border-top: 1px solid #1f6feb33;
     margin-top: 40px;
-=======
-    padding: 15px;
-    margin-top: 25px;
-    color: #8b949e;
-    font-size: 1rem;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
 }
 
 /* ----------------------------- */
@@ -211,48 +119,28 @@ footer {
 
 @media (max-width: 768px) {
 
-<<<<<<< HEAD
     main {
-        padding: 30px 5%;
-=======
-    html {
-        padding: 5px;
+        width: 94%;
     }
 
-    .container {
-        padding: 20px;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    section {
+        padding: 25px;
     }
 
     header h1 {
         font-size: 2.2rem;
     }
 
-<<<<<<< HEAD
-=======
     nav ul {
-        gap: 15px;
-    }
-
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
-    nav a {
-        font-size: 1rem;
+        gap: 20px;
     }
 
     section h2 {
-<<<<<<< HEAD
-        font-size: 1.9rem;
-    }
-
-    p {
-        font-size: 1.1rem;
-=======
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     p {
         font-size: 1.05rem;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
     }
 }
 
@@ -260,28 +148,14 @@ footer {
 
     nav ul {
         flex-direction: column;
-<<<<<<< HEAD
         gap: 12px;
-=======
-        align-items: center;
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 0.95rem;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
     }
 
     header h1 {
         font-size: 1.8rem;
     }
 
-<<<<<<< HEAD
-    main {
-        padding: 20px 4%;
-=======
-    .container {
-        padding: 15px;
->>>>>>> 907de37420f7a424a14d48ea55de7d76c4a3c49a
+    section {
+        padding: 20px;
     }
 }
