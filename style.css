@@ -1,0 +1,163 @@
+/* ----------------------------- */
+/*        STYLE GLOBAL           */
+/* ----------------------------- */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6e6e6;
+    line-height: 1.7;
+}
+
+/* Le site prend TOUTE la largeur */
+main {
+    width: 100%;
+    padding: 40px 8%;
+}
+
+/* ----------------------------- */
+/*            HEADER             */
+/* ----------------------------- */
+
+header {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #0d1117;
+    border-bottom: 2px solid #1f6feb;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #58a6ff;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header i {
+    margin-right: 10px;
+}
+
+/* ----------------------------- */
+/*          NAVIGATION           */
+/* ----------------------------- */
+
+nav {
+    background-color: #0d1117;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c9d1d9;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #58a6ff;
+}
+
+/* ----------------------------- */
+/*            SECTIONS           */
+/* ----------------------------- */
+
+section {
+    margin-bottom: 70px;
+}
+
+section h2 {
+    color: #58a6ff;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #1f6feb;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section h3 {
+    color: #79c0ff;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+p {
+    font-size: 1.25rem;
+    color: #c9d1d9;
+}
+
+/* ----------------------------- */
+/*            FOOTER             */
+/* ----------------------------- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #8b949e;
+    font-size: 1rem;
+    border-top: 2px solid #1f6feb;
+    margin-top: 40px;
+}
+
+/* ----------------------------- */
+/*          RESPONSIVE           */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 30px 5%;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 20px 4%;
+    }
+}

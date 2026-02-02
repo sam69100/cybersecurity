@@ -1,0 +1,30 @@
+name: Déploiement du site statique
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Préparer les fichiers pour GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .   # Déploie tout le dossier (HTML/CSS/JS)
+
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
