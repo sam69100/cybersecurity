@@ -32,14 +32,18 @@ html {
 
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0 5px 0;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #58a6ff;
     margin: 0;
     letter-spacing: 2px;
+}
+
+header i {
+    margin-right: 8px;
 }
 
 /* ----------------------------- */
@@ -50,6 +54,7 @@ nav {
     background-color: #0d1117;
     border-bottom: 2px solid #1f6feb;
     padding: 10px 0;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -59,13 +64,22 @@ nav ul {
     gap: 30px;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
     color: #c9d1d9;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     transition: 0.3s;
+    font-size: 0.98rem;
+}
+
+nav a i {
+    color: #58a6ff;
 }
 
 nav a:hover {
@@ -82,16 +96,26 @@ section {
 
 section h2 {
     color: #58a6ff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
     border-left: 4px solid #1f6feb;
     padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+section h2 i {
+    color: #58a6ff;
 }
 
 section h3 {
     color: #79c0ff;
     margin-top: 25px;
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 /* Paragraphes */
@@ -106,8 +130,64 @@ p {
 
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 15px;
+    margin-top: 25px;
     color: #8b949e;
     font-size: 0.9rem;
+}
+
+/* ----------------------------- */
+/*          RESPONSIVE           */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+
+    html {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a span {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        padding: 12px;
+    }
 }
